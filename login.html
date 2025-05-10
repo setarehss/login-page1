@@ -25,22 +25,31 @@
     style="background-image: url('./images/bg.png'); background-size: cover; background-position: center; height: 100vh; direction: rtl; margin: 0; padding: 0;">
 
     <div class="container-fluid h-100 d-flex align-items-center justify-content-center p-0 m-0">
-        <div class="row w-100 g-3 justify-content-center m-0 p-0">
+        <div class="row w-100 g-3 justify-content-center m-0 pt-0 pb-0 vh-100">
 
             <!-- ستون چپ: فقط در دسکتاپ -->
-            <div class="col-md-3 d-none d-md-block text-center d-flex flex-column justify-content-between p-3">
+            <div class="col-md-3 d-none d-md-block text-center d-flex flex-column justify-content-between p-3"
+                style="position: relative;">
                 <!-- تصویر در بالای سمت راست همان عنصر -->
-                <img src="./images/amoot.png" alt="image" class="top-0 end-0 p-2">
+                <img src="./images/amoot.png" alt="image" class="position-absolute top-0 start-0 p-2 ms-4">
 
                 <!-- نوشته در پایین صفحه -->
-                <div>
+                <!-- متن در پایین سمت چپ -->
+                <div class="mt-auto text-end">
+                    <p>برای اطلاع از شرایط و قوانین حساب کاربری آموت اینجا کلیک کنید.</p>
                 </div>
             </div>
 
             <!-- ستون وسط: فرم لاگین -->
-            <div class="col-12 col-md-6 p-3">
+            <div class="col-12 col-md-4 p-3">
                 <div class="p-4 bg-white rounded shadow-sm">
-                    <h4 class="text-center mb-4">ورود به حساب</h4>
+                    <!-- <h4 class="text-center mb-4">ورود به حساب</h4> -->
+                    <form>
+                        <div class="mb-3 d-flex align-items-center">
+                            <h4 class="text-center">ورود به</h4>
+                            <img src="./images/payamak.png" alt="icon" class="ms-3">
+                        </div>
+                    </form>
                     <form>
                         <div class="mb-3">
                             <label class="form-label">ایمیل</label>
